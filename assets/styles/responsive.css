@@ -1,4 +1,10 @@
 @media (max-width: 991.98px) {
+
+    html body {
+    max-width: 100%;
+    overflow-x: hidden;
+    position: relative;
+}
     .offcanvas .nav-link::after {
         display: none;
     }
