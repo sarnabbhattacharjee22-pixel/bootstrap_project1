@@ -1,0 +1,8 @@
+@media (max-width: 991.98px) {
+    .offcanvas .nav-link::after {
+        display: none;
+    }
+    .hero-text-container {
+        margin-bottom: 3rem;
+    }
+}
