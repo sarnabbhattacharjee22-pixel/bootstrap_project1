@@ -31,3 +31,11 @@ color: #353535;
 .nav-link:hover::after {
     width: 100%;
 }
+
+
+.custom-gradient-bg {
+    /* Replace this linear-gradient with the one copied from Figma */
+    background: linear-gradient(90deg, #FFCC00 0%, #FFF5CB 100%);
+    color: white; /* Ensures text inside is readable */
+    border: none; /* Removes any default Bootstrap borders */
+}
