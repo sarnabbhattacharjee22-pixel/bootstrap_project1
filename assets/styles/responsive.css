@@ -1,6 +1,7 @@
 @media (max-width: 991.98px) {
-
-
+    .offcanvas {
+        --bs-offcanvas-width: 75vw !important;
+    }
     .offcanvas .nav-link::after {
         display: none;
     }
