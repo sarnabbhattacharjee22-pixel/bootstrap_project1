@@ -34,7 +34,112 @@ color: #353535;
 
 
 .custom-gradient-bg {
+    
     background: linear-gradient(90deg, #FFCC00 0%, #FFF5CB 100%);
-    color: white; 
+    color: white;
     border: none; 
+}
+
+
+.icon-1 {
+    position: absolute;
+    top: 2070px; 
+    right: 330px;
+    opacity: 0.5;
+}   
+
+.icon-2 {
+    position: absolute;
+    top: 1710px; 
+    right: 100px;
+}
+
+/* ============= WORK EXPERIENCE ============== */
+.work-part {
+    padding: 60px 0;
+    background: #fafafa;
+}
+
+.work-part h2 {
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 50px;
+    text-align: center; 
+    color: #353535;
+    margin-bottom: 80px !important;
+}
+
+.work-part h5 {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 180%;
+    color: #353535;
+}
+
+.work-part p {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 190%;
+    color: #7a7a7a;
+    margin-top: 5px;
+}
+
+/* Row Spacing */
+.work-part .work-row {
+    margin-bottom: 60px;
+}
+
+/* Symmetrical Spacing from the Center Line */
+.work-part .title {
+    position: relative;
+    padding-right: 50px; 
+}
+.work-part .desc {
+    padding-left: 50px;
+}
+
+/* 1. Outer Dashed Circle */
+.work-part .title::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 46px;
+    height: 46px;
+    border: 1px dashed #a8a8a8;
+    border-radius: 50%;
+    right: -23px;
+    top: 0;
+    z-index: 2;
+    background-color: #fafafa; 
+}
+
+/* 2. Inner Colored Dot */
+.work-part .title::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    right: -12px; /* Centers the 24px dot perfectly inside the 46px circle */
+    top: 11px;
+    z-index: 3;
+}
+
+/* 3. Automatic Dot Colors */
+.work-part .work-row:nth-of-type(1) .title::after { background-color: #5ba66e; } /* Row 1: Green */
+.work-part .work-row:nth-of-type(2) .title::after { background-color: #f06a6a; } /* Row 2: Red */
+.work-part .work-row:nth-of-type(3) .title::after { background-color: #f4c744; } /* Row 3: Yellow */
+
+/* 4. Vertical Connecting Line */
+.work-part .line {
+    position: absolute;
+    width: 1px;
+    height: calc(100% + 60px); 
+    border-left: 1px dashed #a8a8a8;
+    top: 46px; 
+    right: -1px; 
+    z-index: 1;
 }
